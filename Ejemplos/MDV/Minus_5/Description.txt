@@ -1,0 +1,32 @@
+#Configuration
+method = 'dopri5' #RK-45
+data_size = 20000
+batch_time = 100
+batch_size = 5
+niters = 10000
+test_freq = 100
+viz = True
+gpu = 0
+device = 'cpu'
+
+optimizer = torch.optim.RMSprop(func.parameters()) 
+
+Parameters:
+M2, D2, V2
+
+Delta = 0.95
+
+Stopping at iteration 28 as parameters are within 1% of target values
+Loss: 0.00001657424763834570
+M2_G: 11.93383026123046875000
+D2_G: 9.95263767242431640625
+V2_G: 1.97857284545898437500
+B_G: -0.58307057619094848633
+G_G: -0.00339982821606099606
+Pmech2_G: 0.47893619537353515625
+
+Iteration 28 | Total Loss 0.00130398385226726532
+Updated Parameters:
+M2: 11.933830261230469
+D2: 9.952637672424316
+V2: 1.9785728454589844
